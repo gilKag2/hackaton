@@ -3,8 +3,8 @@ import waze from '../../assets/waze.PNG';
 
 const PhoneScreen = () => {
     return (
-        <div>
-            <img style={{ maxWidth: '100%', maxHeight: '100%', display: 'block' }} src={waze} alt="waze" />
+        <div style={{ maxWidth: '100%', maxHeight: '100%', display: 'block' }}>
+            <img style={{ height: '80vh' }} src={waze} alt="waze" />
         </div>
     );
 };
