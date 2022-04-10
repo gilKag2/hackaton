@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
+import { PhoneScreen, DataScreen } from './components';
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container style={{ maxWidth: '80vw', margin: 'auto', alignItems: 'center' }}>
+      <Row style={{ height: '10vh' }} ></Row>
+      <Row >
+        <Col style={{ background: 'blue', height: '80vh' }}>
+          <PhoneScreen />
+        </Col>
+        <Col style={{ background: 'red', height: '80vh' }}>
+          <DataScreen />
+        </Col>
+      </Row>
+    </Container>
   );
-}
+};
 
 export default App;
